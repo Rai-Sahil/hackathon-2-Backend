@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   console.log('Client origin: ', clientOrigin);
 
   // Allow CORS for the specific client origin
-  res.setHeader('Access-Control-Allow-Origin', clientOrigin);
+  res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
